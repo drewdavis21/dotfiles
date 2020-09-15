@@ -3,8 +3,8 @@
 This repo contains my personal "dotfiles" (environment configuration files). Feel free to copy or clone this repo and make any changes you'd like.
 
 ## Prerequisites
-- [zsh](https://github.com/zsh-users/zsh)
-- [starship prompt](https://github.com/starship/starship)
+- [Zsh](https://github.com/zsh-users/zsh)
+- [Homebrew](https://brew.sh) (if on macOS)
 
 ## Installation
 Clone this repository, along with all of its submodules.
