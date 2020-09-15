@@ -1,0 +1,4 @@
+import readline
+
+print('History is disabled.\n')
+readline.write_history_file = lambda *args: None

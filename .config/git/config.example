@@ -1,0 +1,12 @@
+[user]
+  name = $user_name
+  email = $user_email
+
+[alias]
+  new = !git init && git symbolic-ref HEAD refs/heads/main
+  nb = !git checkout -b
+  db = !git branch -d
+  co = !git checkout
+
+[alias "clone"]
+  me = !git clone git@github.com:$user_github/$1.git
