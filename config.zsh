@@ -3,6 +3,9 @@
 dotfiles_dir=$(dirname $0:A)
 
 # 1. Read in user settings, update Git config
+if [[ $(uname) -eq 'Darwin' && ! command -v envsubst >/dev/null 2>&1 ]]; then
+  brew install gettext
+fi
 echo "Now configuring Git..."
 read -r user_name\?"Please enter your full name: " 
 read -r user_email\?"Please enter your email address: "
