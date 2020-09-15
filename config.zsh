@@ -17,8 +17,9 @@ user_name=$user_name user_email=$user_email user_github=$user_github \
 ln -s "$dotfiles_dir/.config" "$HOME/.config"
 ln -s "$dotfiles_dir/.zprofile" "$HOME/.zprofile"
 
-# 3. Source profile
+# 3. Source shell dependencies
 source "$dotfiles_dir/.zprofile"
+source "$dotfiles_dir/.config/zsh/.zshrc"
 
 # 4. Set up config/data directories
 [ -d $VSCODE_PORTABLE ] || mkdir -p $VSCODE_PORTABLE

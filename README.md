@@ -1,6 +1,6 @@
 # dotfiles
 
-This repo contains my personal "dotfiles" (environment configuration files). Feel free to copy or clone this repo and make any changes you'd like.
+This repo contains my personal "dotfiles" (environment configuration files). Feel free to copy or clone this repo and make any changes you'd like. Please note that these configuration files do not support Windows command prompt or Powershell.
 
 ## Prerequisites
 - [Zsh](https://github.com/zsh-users/zsh)
@@ -13,4 +13,4 @@ Clone this repository, along with all of its submodules.
 $ git clone --recurse-submodules https://github.com/drewdavis21/dotfiles.git
 ```
 
-Copy these files into your home directory (`$HOME` on POSIX systems). That's it! If you want to keep this as a separate git repo, you can set up symbolic links in your home directory to point to files and directories in your repo.
+Then run the `install.sh` script inside of the repository. This will install the [`starship`](https://github.com/starship/starship) prompt, set up your Git config, link the necessary files into your home directory, and get you ready to go with your new environment!
