@@ -23,38 +23,6 @@ else
   alias ls="ls -hN --color=auto --group-directories-first"
 fi
 
-# Dev Commands
-
-alias ldpy=load_pyenv
-alias ldrb=load_rbenv
-alias ldnode=load_nvm
-
-load_pyenv() {
-  if command -v pyenv >/dev/null
-  then
-    eval "$(pyenv init -)"
-  else
-    echo "pyenv not installed. Please install pyenv before attempting to load it."
-  fi
-}
-
-load_rbenv() {
-  if command -v rbenv >/dev/null
-  then
-    eval "$(rbenv init -)"
-  else
-    echo "rbenv not installed. Please install rbenv before attempting to load it."
-  fi
-}
-
-load_nvm() {
-  if [ -s "$NVM_DIR/nvm.sh" ]
-  then
-    \. "$NVM_DIR/nvm.sh"
-  else
-    echo "nvm not installed. Please install nvm before attempting to load it."
-  fi
-}
 
 ##################
 # Custom aliases #
