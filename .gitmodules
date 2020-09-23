@@ -1,3 +1,6 @@
 [submodule ".config/zsh/custom/fast-syntax-highlighting"]
 	path = .config/zsh/custom/fast-syntax-highlighting
 	url = https://github.com/zdharma/fast-syntax-highlighting
+[submodule ".config/zsh/custom/zsh-nvm"]
+	path = .config/zsh/custom/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm
