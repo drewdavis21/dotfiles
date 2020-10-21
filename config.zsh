@@ -22,9 +22,7 @@ source "$dotfiles_dir/.zprofile"
 source "$dotfiles_dir/.config/zsh/.zshrc"
 
 # 4. Set up config/data directories
-[ -d $VSCODE_PORTABLE ] || mkdir -p $VSCODE_PORTABLE
 [ -d $GOPATH ] || mkdir -p $GOPATH
 [ -d $PYENV_ROOT ] || mkdir -p $PYENV_ROOT
 [ -d $NVM_HOME ] || mkdir -p $NVM_HOME
 [ -d $RBENV_ROOT ] || mkdir -p $RBENV_ROOT
-[ -d $DOCKER_CONFIG ] || mkdir -p $DOCKER_CONFIG
