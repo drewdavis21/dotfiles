@@ -38,16 +38,19 @@ bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -v '^?' backward-delete-char
 
-# Syntax highlighting (requires fast-syntax-highlighting)
-source $ZSH_CUSTOM/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+# Load dev tools
+command -v pyenv >/dev/null && eval "$(pyenv init -)"
+command -v rbenv >/dev/null && eval "$(rbenv init -)"
 
 # Zsh-nvm
 export NVM_LAZY_LOAD=true
 source $ZSH_CUSTOM/zsh-nvm/zsh-nvm.plugin.zsh 2>/dev/null
 
-# Load dev tools
-command -v pyenv >/dev/null && eval "$(pyenv init -)"
-command -v rbenv >/dev/null && eval "$(rbenv init -)"
+# Syntax highlighting (requires fast-syntax-highlighting)
+source $ZSH_CUSTOM/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+
+# Setup GPG tty
+export GPG_TTY=$TTY
 
 # Start Starship shell (https://github.com/starship/starship)
 eval "$(starship init zsh)"
